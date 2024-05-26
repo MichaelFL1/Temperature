@@ -1,0 +1,798 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.gntyacmbo3b
+	{mso-style-name:gntyacmbo3b;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;line-height:107%'>Exploring
+Trends in Global Temperature</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Name(English): Michael F</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Objective</span></p>
+
+<p class=MsoNormal><span lang=EN-US>In recent years, concerns about climate
+change and its potential impacts have become increasingly prominent on the
+global stage. Understanding the historical trends in temperature is crucial for
+comprehending the complexities of climate dynamics and forecasting future
+scenarios. This projects aims to analyze historical temperature trends.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Data Source</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The data utilized in this project is
+available in the &quot;nycflights13&quot; library in R. The initial size of the
+weather dataset is 26115 rows by 15 columns. There are some missing values that
+needs to be cleaned for more accurate analyze.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Steps</span></p>
+
+<p class=MsoNormal><span lang=EN-US>1. Data Exploration: import and load
+libraries needed for analyzing the dataset.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;line-height:107%;
+font-family:"Lucida Console"'>library(nycflights13)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;line-height:107%;
+font-family:"Lucida Console"'>weather</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=767
+ style='width:575.45pt;background:white'>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 6.0pt 4.5pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:blue'>library(nycflights13)</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:blue'>&gt; weather</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># A tibble: 26,115 × 15</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>   origin  year month   day  hour  temp  dewp humid wind_dir</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>   <i>&lt;chr&gt;</i>  <i>&lt;int&gt;</i> <i>&lt;int&gt;</i> <i>&lt;int&gt;</i>
+  <i>&lt;int&gt;</i> <i>&lt;dbl&gt;</i> <i>&lt;dbl&gt;</i> <i>&lt;dbl&gt;</i>   
+  <i>&lt;dbl&gt;</i></span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 1 EWR     <u>2</u>013     1     1     1  39.0  26.1  59.4     
+  270</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 2 EWR     <u>2</u>013     1     1     2  39.0  27.0  61.6     
+  250</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 3 EWR     <u>2</u>013     1     1     3  39.0  28.0  64.4     
+  240</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 4 EWR     <u>2</u>013     1     1     4  39.9  28.0  62.2     
+  250</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 5 EWR     <u>2</u>013     1     1     5  39.0  28.0  64.4     
+  260</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 6 EWR     <u>2</u>013     1     1     6  37.9  28.0  67.2     
+  240</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 7 EWR     <u>2</u>013     1     1     7  39.0  28.0  64.4     
+  240</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 8 EWR     <u>2</u>013     1     1     8  39.9  28.0  62.2     
+  250</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'> 9 EWR     <u>2</u>013     1     1     9  39.9  28.0  62.2     
+  260</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>10 EWR     <u>2</u>013     1     1    10  41    28.0  59.6     
+  260</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># </span><span lang=EN-US style='font-size:10.0pt;font-family:
+  "Segoe UI Emoji",sans-serif;color:black'>ℹ</span><span lang=EN-US
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> 26,105
+  more rows</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># </span><span lang=EN-US style='font-size:10.0pt;font-family:
+  "Segoe UI Emoji",sans-serif;color:black'>ℹ</span><span lang=EN-US
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> 6 more
+  variables: wind_speed &lt;dbl&gt;, wind_gust &lt;dbl&gt;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'>#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;,
+  time_hour &lt;dttm&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal;word-break:
+  break-all'><span lang=EN-US style='font-size:10.0pt;font-family:"Lucida Console";
+  color:black'># </span><span lang=EN-US style='font-size:10.0pt;font-family:
+  "Segoe UI Emoji",sans-serif;color:black'>ℹ</span><span lang=EN-US
+  style='font-size:10.0pt;font-family:"Lucida Console";color:black'> Use
+  `print(n = ...)` to see more rows</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 6.0pt 4.5pt'></td>
+ </tr>
+ <tr>
+  <td valign=top style='padding:0cm 0cm 6.0pt 4.5pt'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.95pt'>
+   <tr>
+    <td width=1 valign=top style='width:.75pt;padding:0cm 0cm 0cm 0cm'>
+    <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+    lang=EN-US style='font-size:12.0pt;font-family:"Lucida Console";color:blue'>&gt;
+    </span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Import “nycflights13” library from r.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The contents of dataset and its data types
+for each row.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;line-height:107%;
+font-family:"Lucida Console"'>dataset &lt;- weather</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;line-height:107%;
+font-family:"Lucida Console"'>dim(dataset)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;line-height:107%;
+font-family:"Lucida Console"'>df &lt;- data.frame(dataset)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<pre style='background:white'><span class=gntyacmbo3b><span lang=EN-US
+style='font-family:"Lucida Console";color:black'>[1] 26115    15</span></span></pre>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Load weather dataset into a dataframe then
+check size  </span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The size of the dataset is 26115 rows by 15
+columns.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>sum(is.na(df$temp))</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr style='height:15.0pt'>
+  <td width=601 valign=top style='width:450.75pt;background:white;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm'><span lang=EN-US
+  style='color:black'>[1] 1<br>
+  <br>
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=601 valign=top style='width:450.75pt;background:white;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=601 valign=top style='width:450.75pt;background:white;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse'>
+   <tr style='height:15.0pt'>
+    <td width=587 valign=top style='width:440.25pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:15.0pt'>
+    <p class=MsoNormal style='margin-bottom:0cm'><span lang=EN-US
+    style='font-size:10.0pt;line-height:107%;font-family:"Lucida Console";
+    color:blue'>&gt;</span><span lang=EN-US>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.5pt;line-height:107%;
+font-family:"Lucida Console";color:#949494'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Check how many null values exist in the
+temperature column</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There was 1 null value in temperature
+column</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>2. Data Cleaning: cases() function in R
+Programming Language is used to return a logical vector with cases that are
+complete, i.e., no missing value. This function is especially handy when
+dealing with datasets that may have missing data. After cleaning it, the
+dataset size was reduced to 4980 rows by 15 columns.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>newdf
+&lt;- df[complete.cases(df$temp), ]</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>dim(newdf)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;line-height:107%;
+font-family:"Lucida Console";color:black'>[1] 26114    15</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Clean dataframe from null values then check
+again.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The size of the cleaned data was reduced to
+26114 rows by 15 columns.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>summary(weather_data)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.5pt;line-height:107%;
+font-family:"Lucida Console";color:blue'>summary(weather_data)</span><span
+lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'>      year          month            
+day             hour            temp       </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'> Min.   :2013   Min.   : 1.000   Min.   : 1.00  
+Min.   : 0.00   Min.   : 10.94  </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'> 1st Qu.:2013   1st Qu.: 4.000   1st Qu.: 8.00  
+1st Qu.: 6.00   1st Qu.: 39.92  </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'> Median :2013   Median : 7.000   Median :16.00  
+Median :11.00   Median : 55.40  </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'> Mean   :2013   Mean   : 6.504   Mean   :15.68  
+Mean   :11.49   Mean   : 55.26  </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'> 3rd Qu.:2013   3rd Qu.: 9.000   3rd Qu.:23.00  
+3rd Qu.:17.00   3rd Qu.: 69.98  </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'> Max.   :2013   Max.   :12.000   Max.   :31.00  
+Max.   :23.00   Max.   :100.04  </span><span lang=EN-US><br>
+</span><span lang=EN-US style='font-size:9.5pt;line-height:107%;font-family:
+"Lucida Console";color:black'>                                                                
+NA's   :1       </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Check for missing values</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>weather_data &lt;- na.omit(weather_data)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>ggplot(weather_data, aes(x = temp)) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US>  geom_histogram(binwidth = 1) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US>  labs(title = &quot;Temperature
+Distribution&quot;, x = &quot;Temperature (°F)&quot;, y =
+&quot;Frequency&quot;)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=451 height=271
+id="Picture 575444763" src="index.fld/image001.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Using ggplot to make histogram.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Histogram is a graphical representation of
+the distribution of data. This histogram illustrate the distribution of the
+temperature in one year.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>3. Data Analysis: Calculate summary
+statistics for the temperature variables (e.g., mean, median, standard
+deviation) and visualize the distribution of temperatures over time using line
+plots.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>newdf$date
+&lt;- as.Date(paste(newdf$year, newdf$month, newdf$day, newdf$hour, sep =
+&quot;-&quot;))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>mean =
+mean(newdf$temp)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>median
+= median(newdf$temp)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>var =
+var(newdf$temp)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>standardDev
+= sqrt(var(newdf$temp))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>print(c(&quot;Mean
+= &quot;, mean))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>print(c(&quot;Median
+= &quot;, median))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>print(c(&quot;Variance
+= &quot;, var))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>print(c(&quot;Standard
+Deviation = &quot;, standardDev))</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.5pt;line-height:107%;
+font-family:"Lucida Console";color:blue'>[1] &quot;Mean = &quot;         
+&quot;55.2603921268287&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.5pt;line-height:107%;
+font-family:"Lucida Console";color:blue'>[1] &quot;Median = &quot;
+&quot;55.4&quot;     </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.5pt;line-height:107%;
+font-family:"Lucida Console";color:blue'>[1] &quot;Variance = &quot;     
+&quot;316.407686040824&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.5pt;line-height:107%;
+font-family:"Lucida Console";color:blue'>[1] &quot;Standard Deviation = &quot;
+&quot;17.7878522042664&quot;   </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Calculating mean, median, variance, and
+standard deviation using available r functions.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result of the calculation displayed.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>library(ggplot2)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>library(scales)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>ggplot(newdf,
+aes(x = date, y = temp)) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+geom_line(color = &quot;indianred3&quot;,size=1) +geom_smooth()+labs(title =
+&quot;Temperature Over Time&quot;, </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>                                                            
+x = &quot;Date&quot;, y = &quot;Temperature&quot;) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+scale_x_date(date_breaks = '1 month', </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>              
+labels = date_format(&quot;%b-%y&quot;))+</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+theme(plot.title = element_text(hjust=0.5))</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=451 height=278 id="Picture 6"
+src="index.fld/image002.png"
+alt="A graph showing the temperature of the day&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A line chart to visualize the temperature
+in 1 year within the dataset with additional blue line to emphasize the flow of
+the temperature as time goes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This line graph visualizes the temperature
+in the dataset over the time for a year. The gap between tickmarks are one
+month.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>4. Trend Analysis: Use statistical
+techniques (e.g., linear regression) to analyze trends in global temperature
+over the years. Create a regression model to predict future temperature trends
+based on historical data.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>ggplot(newdf,
+aes(x = date, y = temp)) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>  geom_line(color
+= &quot;indianred3&quot;, size = 1) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+geom_smooth(method = &quot;lm&quot;, se = FALSE, color = &quot;blue&quot;) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+labs(title = &quot;Temperature Over Time&quot;, x = &quot;Date&quot;, y =
+&quot;Temperature&quot;) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+scale_x_date(date_breaks = '1 month', labels = date_format(&quot;%b-%y&quot;))+</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+theme(plot.title = element_text(hjust=0.5))</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=451 height=278
+id="Picture 940375417" src="index.fld/image003.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Simple linear regression to make
+temperature future temperature prediction.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Aside from visualizing the temperature over
+the time, this line chart can also be used to make a prediction on future
+temperature using linear regression. The blue line depicts the prediction.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>boxplot(newdf$temp,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>       
+main = &quot;Temperature Distribution&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>       
+ylab = &quot;Temperature (Fahrenheit)&quot;)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=451 height=278
+id="Picture 1833746686" src="index.fld/image004.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Simple box plot to visualize distribution
+of temperature.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Box plot depicts the distribution of
+temperature values, showing the median, quartiles, and any outliers. It
+represents interquartile range(IQR) of temperature values and whiskers
+extending to show the range of values.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>library(vioplot)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>vioplot(newdf$temp,</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        col = &quot;skyblue&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        main = &quot;Temperature
+Distribution&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-US>        ylab = &quot;Temperature
+(Fahrenheit)&quot;)</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=451 height=278
+id="Picture 416557749" src="index.fld/image005.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Simple violin plot to depicts distribution
+of temperature.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The violin plot visualizes the distribution
+of temperature values. The width of the plot at each temperature value
+represents the density of data points at that value, while in the middle of the
+plot there exist box plot.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Command</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>newdf3
+&lt;- df[complete.cases(df), ]</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>selected_vars
+&lt;- newdf3[, c(&quot;temp&quot;, &quot;dewp&quot;,
+&quot;humid&quot;,&quot;wind_dir&quot;,&quot;wind_speed&quot;,&quot;pressure&quot;,&quot;visib&quot;)]</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>correlation_matrix
+&lt;- cor(selected_vars)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>correlation_df
+&lt;- as.data.frame(as.table(correlation_matrix))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>ggplot(data
+= correlation_df, aes(x = Var1, y = Var2, fill = Freq)) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+geom_tile() +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+scale_fill_gradient(low = &quot;white&quot;, high = &quot;firebrick4&quot;) +</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'> 
+labs(title = &quot;Correlation Heatmap&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>      
+x = &quot;Variables&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>      
+y = &quot;Variables&quot;)+theme(plot.title = element_text(hjust=0.5))</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Lucida Console"'>correlation_df</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Output</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=451 height=278
+id="Picture 1862001030" src="index.fld/image006.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the command</span></p>
+
+<p class=MsoNormal><span lang=EN-US>I cleaned the dataset(all columns) before
+conducting heatmap analysis.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Explain the output</span></p>
+
+<p class=MsoNormal><span lang=EN-US>As depicted in the correlation heatmap,
+there is a significant positive correlation between dew point temperature
+(dewp) and air temperature (temp). This suggests that changes in dew point
+temperature tend to be associated with corresponding changes in air
+temperature. However, it’s important to note that correlation does not imply
+causation, and other factors may also influence the relationship between these
+variables. Additionally, the strength of the correlation should be considered,
+with higher correlation coefficients indicating a stronger linear relationship.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>5. Insights and Interpretation: In this
+project, i conducted a comprehensive analysis of temperature data from
+&quot;nycflights13&quot; dataset to explore patterns, trends, and
+relationships. The linear regression line's prediction depicts how the
+temperature rises overtime and will continue to rise in the future.
+Additionally, the highest was in 18 July 2013 with blazing 100.04 fahrenheit
+and lowest temperature was in 23 January 2013 with freezing 10.94 fahrenheit.
+And i also did correlation heatmap to see the correlation between each
+variables in the dataset, dewp or dew point and temperature has the most
+positive correlation.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>References:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://www.statology.org/r-size-of-data-frame/</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://www.listendata.com/2023/07/7-ways-to-remove-rows-with-na-in-r.html</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://www.geeksforgeeks.org/how-to-find-and-count-missing-values-in-r-dataframe/</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://blog.chapagain.com.np/r-calculate-mean-median-mode-variance-standard-deviation/</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://rkabacoff.github.io/datavis/Models.html</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://r-coder.com/violin-plot-r/</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://www.datamentor.io/r-programming/box-plot</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>https://www.geeksforgeeks.org/how-to-create-correlation-heatmap-in-r/</span></p>
+
+</div>
+
+</body>
+
+</html>
